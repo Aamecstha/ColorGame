@@ -1,0 +1,23 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.container{
+    width:600px;
+    height:auto;
+    background-color: aquamarine;
+    margin:0px auto;
+}
+.square{
+    width:30%;
+    background-color: brown;
+    padding-bottom: 30%;
+    margin:1.5%;
+    float:left;
+    border-radius: 30px;
+}
+.tabs{
+    display:flex;
+    justify-content: space-between;
+}

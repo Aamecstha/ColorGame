@@ -29,7 +29,8 @@ function initializeGame() {
   colors = generateRandomColors();
   pickedColor = pickColor();
   document.getElementById("pickedColor").textContent = pickedColor;
-
+  resultTxt.textContent = "";
+  
   for (var i = 0; i < colorBlocks.length; i++) {
     if (i < gameMode) {
       colorBlocks[i].style.background = colors[i];

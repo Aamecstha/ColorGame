@@ -38,3 +38,9 @@ header{
     font-size:30px;
     font-weight:800;
 }
+
+@media screen and (max-width:600px){
+    .container{
+        width:100%;
+    }
+}

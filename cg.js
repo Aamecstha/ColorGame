@@ -11,6 +11,7 @@ var colors, pickedColor;
 var colorBlocks = document.querySelectorAll(".square");
 var resultTxt = document.getElementById("result");
 document.getElementById("status").addEventListener("click", reset);
+var header=document.querySelector("header")
 
 //setting game mode easy
 document.getElementById("easy").addEventListener("click", function () {
@@ -30,7 +31,8 @@ function initializeGame() {
   pickedColor = pickColor();
   document.getElementById("pickedColor").textContent = pickedColor;
   resultTxt.textContent = "";
-  
+  header.style.background="#FFB03A"
+
   for (var i = 0; i < colorBlocks.length; i++) {
     if (i < gameMode) {
       colorBlocks[i].style.background = colors[i];
@@ -46,7 +48,7 @@ function color_block_clicked() {
   console.log(this.style.background, pickedColor);
   if (this.style.background == pickedColor) {
     resultTxt.textContent = "Correct!!";
-    alert("you clicked the correct one");
+    header.style.background=pickedColor
   } else {
     resultTxt.textContent = "Try Again!!";
     alert("you are Wrong Retard!!!!");

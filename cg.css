@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 .container{
-    width:600px;
-    height:auto;
+    width:70%;
     background-color: aquamarine;
     margin:0px auto;
 }
